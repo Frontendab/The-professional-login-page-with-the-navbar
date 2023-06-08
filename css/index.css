@@ -1,0 +1,236 @@
+:root{
+    --black:#000;
+    --bgUlLi:rgb(47, 75, 84);
+    --colorTextWhite:#ccc;
+    --white:#fff;
+    --borderLogin:#414141;
+    --colorLoginAndRegister:#a8a8a8;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/nature-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header a{
+    text-decoration: none;
+    color: var(--colorTextWhite);
+    font-weight: 700;
+}
+header{
+    position: fixed;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+header .logo{
+    color: var(--white);   
+    font-size: 40px;
+    text-transform: uppercase;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li a{
+    margin: 0 10px;
+    font-size: 20px;
+    color: var(--colorTextWhite);
+    border-radius: 20px;
+    padding:5px 8px ;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+header ul li a:hover{
+    color: var(--white);
+    border:2px solid #fff ;
+    background: transparent;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper{
+    position: relative;
+    backdrop-filter: blur(35px);
+    border: 2px solid var(--colorLoginAndRegister);
+    width: 350px;
+    height: 360px;
+    border-radius: 15px;
+    color: var(--colorLoginAndRegister);
+    overflow: hidden;
+    transition: transform .5s ease ,height .5s ease;
+    transform: scale(0);
+}
+.wrapper.active-scale{
+    transform: scale(1);
+}
+.form-filed{
+    position: absolute;
+}
+
+.wrapper.active{
+    height: 410px;
+}
+span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #878f1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: var(--white);
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index:1;
+}
+.wrapper form h1{
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+    margin: 28px 0 ;
+    margin-left: 15px;
+}
+.form-filed{
+    transition: transform .1s ease;
+}
+
+.input-field{
+    margin-top: 15px;
+    margin-left: 34px;
+}
+ 
+.form-filed-register{
+    position: absolute;
+    transform: translateX(-110%);
+    transition: transform .1s ease;
+}
+.input-field input{
+    padding: 15px 35px 15px 5px;
+    width: 250px;
+    border: none;
+    outline: 0; 
+    border-bottom: 2px solid var(--colorLoginAndRegister);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--colorTextWhite);
+}
+.input-field label{
+    position: absolute;
+    color: var(--colorTextWhite);
+    margin-top: 15px;
+    margin-left: -30px;
+
+}
+
+.remember-forgot{
+    margin-left: 14px;
+    margin-top: 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.remember-forgot label,a{
+    font-size: 14px;
+    color: var(--colorLoginAndRegister);   
+}
+.remember-forgot label{
+    margin-left: 20px;
+}
+.remember-forgot a{
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.remember-forgot input{
+    accent-color: var(--colorLoginAndRegister);
+}
+.remember-forgot-register{
+    margin-top: 15px;
+}
+.remember-forgot-register label{
+    font-size: 14px;
+    color: var(--colorLoginAndRegister); 
+    margin-left: 35px;  
+}
+
+.btn-field{
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 20px;
+}
+.btn-field button{
+    width: 92%;
+    padding: 15px 25px; 
+    background: var(--colorLoginAndRegister);
+    color: var(--white);
+    font-weight: 500;
+    text-transform: capitalize;
+    border: none;
+    outline: 0; 
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.register{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+.register p{
+    margin-left: 10px;
+}
+.register a{
+    text-decoration: none;
+}
+.register a:hover{
+    text-decoration: underline;
+}
+.wrapper.active{
+    height: 410px;
+}
+.wrapper.active .form-filed{
+    transform: translateX(110%);
+}
+
+.wrapper.active .form-filed-register{
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
